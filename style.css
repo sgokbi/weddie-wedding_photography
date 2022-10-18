@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Monsieur+La+Doulaise&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+#home-page {
+  top: 0;
+  position: absolute;
+  display: none;
+  width: 100%;
+  transition: 0.5s;
+}
+
+#login-page {
+  top: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.login-header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(249, 136, 212, 0.4),
+      rgba(245, 127, 205, 0.4)
+    ),
+    url(./images/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  position: relative;
+  height: 80vh;
+  width: 70%;
+  display: flex;
+}
+
+.login-container .img-box {
+  width: 55%;
+}
+
+.login-container .img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.login-container .content-box {
+  background-color: rgb(255, 255, 255, 0.86);
+  width: 45%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  position: relative;
+  margin: 2.5rem 0;
+  width: 60%;
+}
+
+.button-box {
+  position: relative;
+  width: 210px;
+  margin: 35px auto;
+  box-shadow: 0 0 20px 9px #ff24a41f;
+  border-radius: 30px;
+}
+
+.button-box .btns {
+  position: relative;
+  outline: none;
+  border: none;
+  padding: 10px 29px;
+  background: transparent;
+  cursor: pointer;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 105px;
+  background: linear-gradient(to right, #fa3275, #ffc710);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.input-group {
+  position: absolute;
+  width: 100%;
+  top: 130px;
+  transition: 0.5s;
+  margin: 1rem auto;
+}
+
+#log-in {
+  left: 10px;
+}
+
+#sign-up {
+  left: 750px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px auto;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.checkbox {
+  margin: 2rem auto;
+}
+
+span {
+  color: #777;
+  font-size: 12px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px 25px;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+  border: none;
+  background: linear-gradient(to right, #fa3275, #ffc710);
+  border-radius: 30px;
+}
+
+.input-group ::placeholder {
+  color: #956373;
+  font-size: 0.8rem;
+}
+
+/* =========================================
+            HOME PAGE START
+======================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5.2rem;
+  box-shadow: 5px 5px 5px rgb(248, 248, 248);
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.logo a {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 2rem;
+  margin-top: 1rem;
+  letter-spacing: 0.26rem;
+  color: #ff3d76;
+  font-weight: 600;
+}
+
+.navbar img {
+  width: 10%;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  padding: 0 1rem;
+}
+
+.nav-links li a {
+  font-size: 1.2rem;
+  color: #ff3d76;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background: linear-gradient(to right, #fa3275, #ffc710);
+  transition: 0.4s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* ===========   Gallary Section Start =============*/
+.gallary h2,
+.work h2 {
+  font-family: "Monsieur La Doulaise", cursive;
+  color: #f84581;
+  font-size: 6.6rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 8rem 0rem 0rem;
+}
+
+.show-pictures {
+  padding: 2.5rem 0rem 6rem;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.show-pictures-content {
+  height: 400px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.pictures-slide {
+  height: 400px;
+  width: 50%;
+  background: url(./images/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.pictures-slide img {
+  object-fit: cover;
+}
+
+.gallary-container {
+  background-color: rgb(255, 240, 245);
+  padding: 0 0 2rem;
+}
+
+.gallary-div {
+  width: 80%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 2px;
+  grid-auto-flow: dense;
+}
+
+.gallary-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horizontal {
+  grid-column: auto / span 2;
+}
+
+.vertical {
+  grid-row: auto / span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-column: span 2;
+}
+
+/* ============ Work History Section Start =============== */
+.work {
+  padding: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.work h2 {
+  padding: 0;
+  margin: 6rem 0;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1080px;
+  margin: 1rem auto;
+  padding: 0 20px;
+}
+
+.wrapper .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #f84581;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.wrapper .row-1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper .row-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper .row section {
+  position: relative;
+  background: rgb(246, 221, 221);
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+}
+
+.wrapper .row section::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: rgb(246, 221, 221);
+  top: 25px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.row-2 section::before {
+  left: -7px;
+}
+
+.row-1 section::before {
+  right: -7px;
+}
+
+.row section .icon,
+.center-line .scroll-icon {
+  position: absolute;
+  background: #f84581;
+  height: 40px;
+  width: 40px;
+  /* text-align: center; */
+  /* line-height: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(225, 110, 110, 0.3);
+}
+
+.center-line .scroll-icon {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+}
+
+.row-1 section .icon {
+  top: 13px;
+  right: -60px;
+}
+
+.row-2 section .icon {
+  top: 13px;
+  left: -60px;
+}
+
+.row section .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row section .details .title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fa3275;
+}
+
+.row section .details span {
+  color: #fa3275;
+  font-size: 0.9rem;
+}
+
+.row section p {
+  font-size: 1rem;
+  margin: 10px 0 25px 0;
+}
+
+.row section .bottom {
+  text-align: left;
+}
+
+.row section .bottom a {
+  background-color: #f6407d;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+.row section .bottom a:hover {
+  background-color: #ff7979;
+}

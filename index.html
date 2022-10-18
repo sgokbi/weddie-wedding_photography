@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weddie</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <!-- CUSTOM CSS LINK  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- FONT AWESOME CSS LINK -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS ANIMATION CSS LINK  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ////////////////////////////////////////////////////////
+                          LOGIN PAGE START
+    ////////////////////////////////////////////////////// -->
+    <div id="login-page">
+      <header class="login-header">
+        <section
+          class="login-container"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div class="img-box">
+            <img src="images/login-bg-img.jpg" alt="" />
+          </div>
+          <div class="content-box">
+            <div class="form-box">
+              <div class="button-box">
+                <div id="btn"></div>
+                <button class="btns" id="login-btn">Log In</button>
+                <button class="btns" id="sign-up-btn">Sign Up</button>
+              </div>
+
+              <form action="" id="log-in" class="input-group">
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="user Id"
+                  required
+                />
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="enter password"
+                  required
+                />
+                <input type="checkbox" class="checkbox" />
+                <span>Remember Password</span>
+                <button class="submit-btn login-submit-btn">log In</button>
+              </form>
+
+              <form action="" id="sign-up" class="input-group">
+                <input type="text" class="input-field" placeholder="user Id" />
+                <input type="text" class="input-field" placeholder="email Id" />
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="enter password"
+                />
+                <input type="checkbox" class="checkbox" />
+                <span>I agree to the terms & conditions</span>
+                <button class="submit-btn signup-submit-btn">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////
+                          HOME PAGE START
+    ////////////////////////////////////////////////////// -->
+    <div id="home-page">
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="images/logo.png" alt="" />
+            <a href="#">Weddie</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#gallary" class="active">Gallary</a></li>
+            <li><a href="#work">Work </a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="gallary" class="gallary">
+        <h2>Some best pictures !!</h2>
+
+        <div class="show-pictures">
+          <div class="show-pictures-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatem eius dolor eveniet inventore pariatur atque quisquam
+              distinctio debitis voluptatibus molestias mollitia ab est quaerat
+              quae excepturi vitae nihil magnam repudiandae ut amet commodi,
+              ipsum quia architecto!
+            </p>
+          </div>
+          <div class="pictures-slide"></div>
+        </div>
+
+        <div class="gallary-container">
+          <h2>Clients favourite !!</h2>
+          <div class="gallary-div">
+            <div><img src="images/gallary/1-normal.jpg" alt="" /></div>
+
+            <div class="big"><img src="images/gallary/2-big.jpg" alt="" /></div>
+
+            <div class="vertical">
+              <img src="images/gallary/3-vertical.jpeg" alt="" />
+            </div>
+
+            <div class="horizontal">
+              <img src="images/gallary/4-horizontal.jpg" alt="" />
+            </div>
+
+            <div class="horizontal">
+              <img src="images/gallary/5-horizontal.jpg" alt="" />
+            </div>
+
+            <div class="vertical">
+              <img src="images/gallary/6-vertical.jpg" alt="" />
+            </div>
+
+            <div><img src="images/gallary/7-normal.jpg" alt="" /></div>
+
+            <div class="vertical">
+              <img src="images/gallary/8-vertical.jpg" alt="" />
+            </div>
+
+            <div class="horizontal">
+              <img src="images/gallary/9-horizontal.jpg" alt="" />
+            </div>
+
+            <div>
+              <img src="images/gallary/10-big.jpg" alt="" class="big" />
+            </div>
+
+            <div class="vertical">
+              <img src="images/gallary/11-vertical.jpg" alt="" />
+            </div>
+
+            <div class="horizontal">
+              <img src="images/gallary/12-horzontal.jpg" alt="" />
+            </div>
+
+            <div class="vertical">
+              <img src="images/gallary/13-vertical.jpg" alt="" />
+            </div>
+
+            <div><img src="images/gallary/14-normal.jpg" alt="" /></div>
+
+            <div class="big">
+              <img src="images/gallary/15-big.jpg" alt="" />
+            </div>
+
+            <div class="vertical">
+              <img src="images/gallary/16-vertical.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== WORK HISTORY SECTION START =========== -->
+      <section id="work" class="work">
+        <h2>Work History</h2>
+        <div class="wrapper">
+          <div class="center-line">
+            <a href="" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+          </div>
+
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-camera"></i>
+              <div class="details">
+                <p class="title">Event 1</p>
+                <span>1st Jan 2021</span>
+              </div>
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatum quibusdam saepe aliquid a voluptatem!
+                Error voluptates dolor aut cum.
+              </p>
+              <div class="bottom">
+                <a href="">Pictures</a>
+              </div>
+            </section>
+          </div>
+
+          <div class="row row-2">
+            <section>
+              <i class="icon fas fa-camera"></i>
+              <div class="details">
+                <p class="title">Event 2</p>
+                <span>14th Feb 2021</span>
+              </div>
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatum quibusdam saepe aliquid a voluptatem!
+                Error voluptates dolor aut cum.
+              </p>
+              <div class="bottom">
+                <a href="">Pictures</a>
+              </div>
+            </section>
+          </div>
+
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-camera"></i>
+              <div class="details">
+                <p class="title">Event 3</p>
+                <span>3rd July 2021</span>
+              </div>
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatum quibusdam saepe aliquid a voluptatem!
+                Error voluptates dolor aut cum.
+              </p>
+              <div class="bottom">
+                <a href="">Pictures</a>
+              </div>
+            </section>
+          </div>
+
+          <div class="row row-2">
+            <section>
+              <i class="icon fas fa-camera"></i>
+              <div class="details">
+                <p class="title">Event 4</p>
+                <span>20th Dec 2021</span>
+              </div>
+              <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis, voluptatum quibusdam saepe aliquid a voluptatem!
+                Error voluptates dolor aut cum.
+              </p>
+              <div class="bottom">
+                <a href="">Pictures</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- AOS Animation JS link  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- CUSTOM JS link  -->
+    <script src="main.js"></script>
+  </body>
+</html>
